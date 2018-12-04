@@ -22,6 +22,7 @@ elif [ `uname` = "Darwin" ] ; then
 fi
 #copiar el archivo fsleyes.sh a directorio de fsl
 sudo mv /home/usuario/Desktop/fsleyes.sh  /usr/local/fsl/bin
-#Ahora agregar alias a bashrc o en bash_profile con lo siguiente
+#Ahora agregar alias bash_profile con lo siguiente
+#abre una nueva terminal y ahí escribe: nano .bash_profile y ya dentro de ese, ahora si colocar lo siguiente:
 alias FSLeyes='bash /usr/local/fsl/bin/fsleyes.sh'
 #Ya esta listo y debe funcionar corriendo FSLeyes en la terminal
