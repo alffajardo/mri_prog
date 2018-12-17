@@ -26,3 +26,10 @@ sudo mv /home/usuario/Desktop/fsleyes.sh  /usr/local/fsl/bin
 #abre una nueva terminal y ahí escribe: nano .bash_profile y ya dentro de ese, ahora si colocar lo siguiente:
 alias FSLeyes='bash /usr/local/fsl/bin/fsleyes.sh'
 #Ya esta listo y debe funcionar corriendo FSLeyes en la terminal
+
+
+FSLDIR=/usr/local/fsl
+. ${FSLDIR}/etc/fslconf/fsl.sh
+PATH=${FSLDIR}/bin:${PATH}
+export FSLDIR PATH
+
