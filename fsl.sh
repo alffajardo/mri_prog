@@ -3,6 +3,8 @@ Descargar archivo fslinstaller.py en https://fsl.fmrib.ox.ac.uk/fsldownloads_reg
 #luego 
 cd ~/Downloads
 sudo python fslinstaller.py
+#instalar
+sudo apt-get install libopenblas-base
 #Agregar a bashrc 
 export LD_LIBRARY_PATH=/usr/lib/openblas-base/
 export PATH="/usr/local/fsl/bin:$PATH"
@@ -27,7 +29,7 @@ sudo mv /home/usuario/Desktop/fsleyes.sh  /usr/local/fsl/bin
 alias FSLeyes='bash /usr/local/fsl/bin/fsleyes.sh'
 #Ya esta listo y debe funcionar corriendo FSLeyes en la terminal
 
-
+#Agregar a bashrc 
 FSLDIR=/usr/local/fsl
 . ${FSLDIR}/etc/fslconf/fsl.sh
 PATH=${FSLDIR}/bin:${PATH}
